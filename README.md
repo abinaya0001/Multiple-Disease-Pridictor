@@ -1,4 +1,4 @@
-# Multi-Cure: The Multiple Disease Predictor
+# 🫀Multi-Cure: The Multiple Disease Predictor💉
 **Check out This Web. app!**
 [Try it out!](https://multi-cure.streamlit.app/)
 # Details
