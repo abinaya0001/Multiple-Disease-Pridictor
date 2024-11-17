@@ -5,7 +5,7 @@ import streamlit_option_menu as som
 
 # Set page configuration
 st.set_page_config(
-    page_title="Multi-Cure 💉",
+    page_title="Multi-Cure ",
     page_icon="🫀",
     layout="wide",
     initial_sidebar_state="expanded"
