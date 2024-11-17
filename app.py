@@ -31,7 +31,7 @@ with st.sidebar:
 # Diabetes Prediction Page
 if selected == "Diabetes Prediction":
     st.title("🩸 Diabetes Prediction using ML")
-    st.write("Fill in the details below to predict if the person has diabetes.")
+    st.write("Fill in the details below to predict if the person has diabetes ")
     st.markdown("---")
 
     # Input fields
@@ -66,7 +66,7 @@ if selected == "Diabetes Prediction":
 # Heart Disease Prediction Page
 if selected == "Heart Disease Prediction":
     st.title("❤️ Heart Disease Prediction using ML")
-    st.write("Provide the following information to predict heart disease.")
+    st.write("Provide the following information to predict heart disease ")
     st.markdown("---")
 
     # Input fields
@@ -111,7 +111,7 @@ if selected == "Heart Disease Prediction":
 # Parkinson's Prediction Page
 if selected == "Parkinson's Prediction":
     st.title("🧠 Parkinson's Disease Prediction using ML")
-    st.write("Enter the required details to check for Parkinson's disease.")
+    st.write("Enter the required details to check for Parkinson's disease ")
     st.markdown("---")
 
     # Input fields
