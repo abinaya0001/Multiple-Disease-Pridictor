@@ -5,7 +5,7 @@ import streamlit_option_menu as som
 
 # Set page configuration
 st.set_page_config(
-    page_title="Heart Cure 💉",
+    page_title="Multi-Cure 💉",
     page_icon="🫀",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -19,7 +19,7 @@ parkinsons_model = pickle.load(open(f"{working_dir}/saved_models/parkinsons_mode
 
 # Sidebar for navigation
 with st.sidebar:
-    st.title("Heart Cure 🩺")
+    st.title("Multi-Cure 🩺")
     selected = som.option_menu(
         "Disease Prediction",
         ["Diabetes Prediction", "Heart Disease Prediction", "Parkinson's Prediction"],
