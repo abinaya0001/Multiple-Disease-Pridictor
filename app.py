@@ -5,8 +5,8 @@ import streamlit_option_menu as som
 
 # Set page configuration
 st.set_page_config(
-    page_title="Multi-Cure ",
-    page_icon="🫀",
+    page_title="Multi-Cure 💉",
+    page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -28,7 +28,7 @@ with st.sidebar:
         default_index=0,
     )
 
-# Diabetes Prediction Page
+# Home Page
 if selected == "Diabetes Prediction":
     st.title("🩸 Diabetes Prediction using ML")
     st.write("Fill in the details below to predict if the person has diabetes.")
