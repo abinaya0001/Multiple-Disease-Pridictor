@@ -5,7 +5,7 @@ import streamlit_option_menu as som
 
 # Set page configuration
 st.set_page_config(
-    page_title="Multi-Cure 💉",
+    page_title="Multi-Cure 💉 - Multiple Disease Predictor",
     page_icon="🩺",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -22,13 +22,55 @@ with st.sidebar:
     st.title("Multi-Cure 🩺")
     selected = som.option_menu(
         "Disease Prediction",
-        ["Diabetes Prediction", "Heart Disease Prediction", "Parkinson's Prediction"],
+        ["Home", "Diabetes Prediction", "Heart Disease Prediction", "Parkinson's Prediction"],
         menu_icon="hospital",
-        icons=["activity", "heart", "person"],  # Use built-in Streamlit icons
+        icons=["house", "activity", "heart", "person"],  # Use built-in Streamlit icons
         default_index=0,
     )
 
 # Home Page
+if selected == "Home":
+    st.title("Welcome to Multi-Cure 💉")
+    st.subheader("Your One-Stop Solution for Disease Prediction using Machine Learning")
+    st.markdown(
+        """
+        Multi-Cure is a cutting-edge platform designed to predict the likelihood of various diseases using 
+        state-of-the-art machine learning models. Our goal is to provide quick, accurate, and reliable predictions 
+        to help individuals take proactive measures for their health.
+        """
+    )
+
+    st.markdown("### What You Can Do:")
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        st.info("#### 🩸 **Diabetes Prediction**\nPredicts the presence of diabetes based on various health parameters.")
+    with col2:
+        st.success("#### ❤️ **Heart Disease Prediction**\nEstimates the risk of heart disease using vital statistics and metrics.")
+    with col3:
+        st.warning("#### 🧠 **Parkinson's Disease Prediction**\nDetects signs of Parkinson's disease using speech-related features.")
+
+    st.markdown("---")
+    st.markdown(
+        """
+        ### How It Works:
+        1. Navigate through the sidebar to select the type of prediction you want to perform.
+        2. Fill in the required parameters on the selected page.
+        3. Get instant predictions powered by trained ML models.
+        """
+    )
+
+    st.markdown(
+        """
+        **Disclaimer:** This tool is not a substitute for professional medical advice, diagnosis, or treatment. 
+        Always consult a qualified healthcare provider with any questions regarding your health.
+        """
+    )
+
+    st.markdown("---")
+    st.caption("Created with ❤️ by the Multi-Cure Team | Powered by Machine Learning")
+
+# Diabetes Prediction Page
 if selected == "Diabetes Prediction":
     st.title("🩸 Diabetes Prediction using ML")
     st.write("Fill in the details below to predict if the person has diabetes.")
